@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hatim Kanorwala"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter UserName"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/heading"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:hint="Enter Password"
+        android:textColorHint="@color/black"
+        android:layout_margin="10dp"
+        android:textSize="10dp"
+        android:inputType="textPassword"
+        />
+    <!--        android:maxLength="10"-->
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:text="Login"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+
+        />
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_margin="10dp"
+        android:text="Register"
+        android:layout_centerInParent="true"
+        android:onClick="redirectRegister"
+        />
+    <TextView
+        android:id="@+id/loginMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRegister"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>
